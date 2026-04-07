@@ -1,0 +1,163 @@
+.App {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+span,button{
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+
+
+.todo{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFF6F6;
+  height: 500px;
+}
+.intodo{
+  display: flex;
+  flex-direction: row;
+  
+  gap: 10px;
+}
+.clearbtn{
+  width: 50%;
+}
+
+.todo h1{
+  text-align: center;
+}
+body{
+  background-color: #000000;
+  margin: 0;
+  font-family: sans-serif;
+  color: #F21717;
+}
+
+button{
+  height: 20px;
+  border-radius: 10px;
+  background-color: #C51111;
+  color: white;
+  border: none;
+}
+
+.inputBox{
+  display: flex;
+  gap: 10px;
+}
+.inputBox input{
+  border-radius: 10px;
+  background-color: #cd9e9e;
+  color: rgb(23, 23, 23);
+  
+  
+}
+.inputBox button{
+  width: 80px;
+  height: 30px;
+  border-radius: 100px;
+  
+ 
+}
+.inputBox button:hover{
+  background-color: #ea2e2e;
+  font-size: 1rem;
+}
+
+.dropdown{
+ 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    border-radius: 5px;
+}
+
+.searchName{
+  margin-top: 15px;
+  width: 350px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px black solid;
+
+}
+
+.emoji{
+  font-size: 20px;
+  
+}
+
+.list{
+  background-color: black;
+  width: 300px;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+
+.Listitems{
+  display: flex;
+  width: 200px;
+  gap: 20px;
+  
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.btns{
+  margin-left: auto;
+}
+.btns button{
+  margin-left: 10px;
+  width: 60px;
+}
+
+.btns button:hover{
+  background-color: #ea2e2e;
+    font-size: 1rem;
+}
+
+.clearbtn:hover{
+  background-color: #ea2e2e;
+    font-size: 1rem;
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+  .intodo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .searchName{
+      margin-top: 70px;
+      width: 300px;
+    }
+    .list{
+      width: 270px;
+     
+    }
+}
